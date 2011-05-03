@@ -1,6 +1,6 @@
 var AutoScroller = new function () {
     this.speed = 1;
-    this.div = "NOSET";
+    this.div = "NOTSET";
 
     //These should be private
     var accel = this.speed;
@@ -8,7 +8,7 @@ var AutoScroller = new function () {
     var pause = false;
 
     this.scroll = function () {
-        if (this.div == "NOSET") {
+        if (this.div == "NOTSET") {
             alert('Set div to scroll');
             return;
         }

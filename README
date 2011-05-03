@@ -1,0 +1,3 @@
+AutoScroller was developed for a gadget that contained a div tag full of text. We scrolled the div to show the user the div contained more information.
+
+See demo.html for a sample use.
