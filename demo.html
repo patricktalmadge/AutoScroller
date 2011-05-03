@@ -1,0 +1,55 @@
+<html>
+    <head>
+        <title>Scroller</title>
+        <style type="text/css">
+            .frame {
+                font:12px arial;
+                width:200;
+                height:200;
+                border:none;
+                overflow:hidden;
+                border:1px solid black;
+                padding:5;
+                
+            }
+        </style>
+    </head>
+    <body>
+        <div class="frame" id="news">
+            <div>
+                NEWS
+                <hr />
+            </div>
+            <div>Segment 1</div>
+            <div>Segment 2</div>
+            <div>Segment 3</div>
+            <div>Segment 4</div>
+            <div>Segment 5</div>
+            <div>Segment 6</div>
+            <div>Segment 7</div>
+            <div>Segment 8</div>
+            <div>Segment 9</div>
+            <div>Segment 10</div>
+            <div>Segment 11</div>
+            <div>Segment 12</div>
+            <div>Segment 13</div>
+            <div>Segment 14</div>
+            <div>Segment 15</div>
+            <div>Segment 16</div>
+            <div>Segment 17</div>
+            <div>Segment 18</div>
+            <div>Segment 19</div>
+        </div>
+    </body>
+
+    <script type="text/javascript" src="AutoScroller.js"></script>
+    <script type="text/javascript" src="http://ajax.aspnetcdn.com/ajax/jQuery/jquery-1.5.2.min.js"></script>
+    <script type="text/javascript">
+        $(document).ready(function () {
+            AutoScroller.div = document.getElementById("news");
+            AutoScroller.scroll();
+            $('#news').mouseenter(function () { AutoScroller.pauseScroller(); });
+            $('#news').mouseleave(function () { AutoScroller.startScroller(); });
+        });
+    </script>
+</html>
